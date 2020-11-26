@@ -38,6 +38,20 @@ const App = () => {
       logo:
         "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Besiktas_JK.svg/1200px-Besiktas_JK.svg.png",
     },
+    {
+      id: 6,
+      country: "Italy",
+      name: "Milan",
+      logo:
+        "https://assets.stickpng.com/images/584ab15330d6736bca3d6e24.png",
+    },
+    {
+      id: 7,
+      country: "Italy",
+      name: "Juventus",
+      logo:
+        "https://purepng.com/public/uploads/large/purepng.com-juventus-logojuventuslogojuventus-turin-logonew-21529676316hzqzr.png",
+    },
   ];
   const randomNum = Math.floor(Math.random() * clubs.length + 1);
   const loadedClub = clubs.filter((item) => item.id === randomNum);
@@ -62,7 +76,7 @@ const App = () => {
             window.location.reload();
           }}
         >
-          Generate Club
+          Find Club
         </button>
       </div>
     </div>
